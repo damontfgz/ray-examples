@@ -20,6 +20,7 @@ llm_config = LLMConfig(
     ),
     # accelerator_type="T4",   # tells Ray to place it on a T4 node if available
     log_engine_metrics=True,
+    resources_per_bundle={}
 )
 
 app = build_openai_app({"llm_configs": [llm_config]})
