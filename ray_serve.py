@@ -13,9 +13,10 @@ llm_config = LLMConfig(
         ),
         # Optional: per-replica resource requests
         ray_actor_options={
-            "num_cpus": 0.2,
-            "num_gpus": 0.5,  # each replica gets 1 GPU
+            "num_cpus": 1,
+            "num_gpus": 1,  # each replica gets 1 GPU
         },
+
     ),
     # accelerator_type="T4",   # tells Ray to place it on a T4 node if available
     log_engine_metrics=True,
