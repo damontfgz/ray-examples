@@ -17,7 +17,7 @@ llm_config = LLMConfig(
             "num_gpus": 0.5,  # each replica gets 1 GPU
         },
     ),
-    accelerator_type="T4",   # tells Ray to place it on a T4 node if available
+    # accelerator_type="T4",   # tells Ray to place it on a T4 node if available
     log_engine_metrics=True,
 )
 
